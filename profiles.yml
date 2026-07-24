@@ -1,0 +1,11 @@
+Portfolio_DBT_core_Databricks:
+  outputs:
+    dev:
+      catalog: "{{ env_var('CATALOG')}}"
+      host: "{{ env_var('HOST')}}"
+      http_path: "{{ env_var('HTTP_PATH')}}"
+      schema: "{{ env_var('SCHEMA')}}"
+      threads: 1
+      token: "{{ env_var('TOKEN')}}"
+      type: "{{ env_var('TYPE')}}"
+  target: "{{ env_var('TARGET')}}"
