@@ -2,7 +2,6 @@
 target/
 dbt_packages/
 logs/
-models/example
 .user.yml
 .gitkeep
 .env

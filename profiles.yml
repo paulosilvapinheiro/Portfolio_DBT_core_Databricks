@@ -1,4 +1,4 @@
-Portfolio_DBT_core_Databricks:
+DEV_Portfolio_DBT_core_Databricks:
   outputs:
     dev:
       catalog: "{{ env_var('CATALOG')}}"

@@ -1,0 +1,20 @@
+
+create database northwind;
+
+SHOW TABLES IN workspace.northwind;
+
+CREATE SCHEMA IF NOT EXISTS raw.northwind;
+
+CREATE OR REPLACE TABLE raw.northwind.categories DEEP CLONE workspace.northwind.categories;
+CREATE OR REPLACE TABLE raw.northwind.customers DEEP CLONE workspace.northwind.customers;
+CREATE OR REPLACE TABLE raw.northwind.employees DEEP CLONE workspace.northwind.employees;
+CREATE OR REPLACE TABLE raw.northwind.order_details DEEP CLONE workspace.northwind.order_details;
+CREATE OR REPLACE TABLE raw.northwind.orders DEEP CLONE workspace.northwind.orders;
+CREATE OR REPLACE TABLE raw.northwind.products DEEP CLONE workspace.northwind.products;
+CREATE OR REPLACE TABLE raw.northwind.shippers DEEP CLONE workspace.northwind.shippers;
+CREATE OR REPLACE TABLE raw.northwind.suppliers DEEP CLONE workspace.northwind.suppliers;
+
+
+-- ORDERS
+
+describe table raw.northwind.orders;

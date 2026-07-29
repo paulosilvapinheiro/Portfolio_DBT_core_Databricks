@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: northwind_db
+    description: "Banco de dados de vendas e distribuição comercial (B2B). Sistema de gestão de importadora e exportadora de alimentos finos."
+    catalog: raw
+    schema: northwind
+
+    tables:
+      - name: orders
+        description: "Tabela com os pedidos da empresa"
+        columns:
+          - name: orderid
+          - name: customerid
+          - name: employeeid
+          - name: orderdate
+          - name: requireddate
+          - name: shippeddate
+          - name: shipvia
+          - name: freight
+          - name: shipname
+          - name: shipaddress
+          - name: shipcity
+          - name: shipregion
+          - name: shippostalcode
+          - name: shipcountry
