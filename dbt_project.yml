@@ -6,7 +6,7 @@ name: 'Portfolio_DBT_core_Databricks'
 version: '1.0.0'
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'Portfolio_DBT_core_Databricks'
+profile: 'DEV_Portfolio_DBT_core_Databricks'
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -32,5 +32,18 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   Portfolio_DBT_core_Databricks:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    staging:
+      +schema: staging
       +materialized: view
+    
+    intermediate:
+      +materialized: ephemeral
+    
+    marts:
+      +schema: marts
+      +materialized: table
+
+seeds:
+  Portfolio_DBT_core_Databricks:
+    +schema: seeds
+    +tags: ['seeds']
