@@ -47,3 +47,7 @@ seeds:
   Portfolio_DBT_core_Databricks:
     +schema: seeds
     +tags: ['seeds']
+    projeto_um:
+      +catalog: raw
+      +schema: projeto_um
+      +tags: ['projeto_um']
