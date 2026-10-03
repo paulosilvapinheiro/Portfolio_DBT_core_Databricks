@@ -1,7 +1,10 @@
 
-config(
-    tags=['comercial']
-)
+{{ 
+    config(
+        tags=['comercial']
+    )
+}}
+
 with renamed as (
 
     select

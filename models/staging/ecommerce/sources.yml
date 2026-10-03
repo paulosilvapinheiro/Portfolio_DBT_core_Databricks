@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: ecommerce
+    description: "Dados da noss loja de e-commerce"
+    catalog: raw
+    schema: projeto_um
+
+    tables: 
+      - name: avaliacoes
+        description: "Tabela de avaliações dos produtos"
+
+      - name: carrinho
+        description: "Tabela de carrinhos de compras"
+
+      - name: categorias
+        description: "Tabela de categorias dos produtos"
+
+      - name: clientes
+        description: "Tabela de clientes"
+
+      - name: itens_pedidos
+        description: "Tabela de itens dos pedidos"
+
+      - name: pagamentos
+        description: "Tabela de pagamentos"
+
+      - name: pedidos
+        description: "Tabela de pedidos"
+        
+      - name: produtos
+        description: "Tabela de produtos"
